@@ -2,7 +2,7 @@
   "profiles": {
     "kiota": {
       "commandName": "Project",
-      "commandLineArgs": "generate --openapi C:\\Users\\Flankenstein\\Desktop\\RatingApi.json -o C:\\Users\\Flankenstein\\source\\repos\\kiota\\Generated -c UpsRatingClientApi -l CSharp"
+      "commandLineArgs": "generate --openapi https://raw.githubusercontent.com/UPS-API/api-documentation/main/Rating.json -o C:\\Users\\Flankenstein\\source\\repos\\kiota\\Generated -c UpsRatingClientApi -l CSharp"
     }
   }
 }
