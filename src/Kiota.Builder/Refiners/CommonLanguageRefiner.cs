@@ -509,7 +509,7 @@ public abstract class CommonLanguageRefiner : ILanguageRefiner
         else
         {
             /* The suffix of our 'codeComposedType' is a child type of 'codeClass'
-             * Therefore we narrow down this specific case it seems to using the first indexof _ and comparing looking for that type within 'codeClass' */
+             * Therefore we narrow down this specific case it seems to using the first indexof _ and looking for that type within 'codeClass' */
             var codeComposedTypeSuffixType = codeComposedType.Name.Substring(codeComposedType.Name.IndexOf('_', StringComparison.OrdinalIgnoreCase) + 1);
 
             if (codeComposedType.Name.Equals(codeClass.Name, StringComparison.OrdinalIgnoreCase) || codeClass.FindChildByName<CodeProperty>(codeComposedTypeSuffixType, false) is not null)
